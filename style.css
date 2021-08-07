@@ -1,0 +1,260 @@
+
+*{
+  margin:0;
+  padding:0;
+font-family: 'Acme', sans-serif;
+} 
+html{
+  scroll-behavior: smooth;
+}
+#header{
+   display: flex;
+  align-items: center;
+  position:sticky;
+  top: 0px;
+}
+#header-img{
+  border-radius: 50%;
+}
+#logo{
+  margin:0px 20px;
+  opacity: 2;
+}
+#logo img{
+  height:70px;
+  margin:1px 3px;
+}
+ #nav-bar ul{
+  display: flex;
+}
+ #header::before {
+     content: "";
+     background-color: black;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     opacity: 0.4;
+     z-index: -1;
+     top: 0px;
+     left: 0px;
+   }
+
+#nav-bar ul li {
+  padding:10px;
+  padding-left:30px ;
+  padding-right: 30px;
+  font-size: 1.2rem;
+  list-style: none;
+  
+}
+#nav-bar ul li a{
+  color: white;
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#nav-bar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 520px;
+  padding: 0px 100px 0px 100px;
+  text-align: center;
+}
+#home::before{
+   content: "";
+     background-color: black;
+     position: absolute;
+     height: 82%;
+     width: 100%;
+     opacity: 0.9;
+     z-index: -1;
+     top: 0px;
+     left: 0px;
+    background: url(https://t3.ftcdn.net/jpg/02/52/12/40/360_F_252124067_aCtp9ZD934RboKmjJzkXiwYDL7XkNjpn.jpg) no-repeat center center/cover;
+}
+
+#home h2{
+  text-align: center;
+}
+/** Utility class **/
+.h-primary{
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
+}
+/******************/
+#email{
+  margin-top: 10px;
+  border-style: solid;
+  height: 1.5rem;
+  width: 15rem;
+}
+#submit{
+  margin-top: 0.5rem;
+  height:2rem;
+  width: 6rem;
+  border-style: none;
+  border-radius: 23px;
+  background-color: #c9822a;
+}
+#submit:hover{
+ background-color: 
+#f2753f;
+cursor: pointer;
+}
+#form{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+
+} 
+
+
+#container{
+    margin-top: 10px;
+    display:flex;
+    padding: 0px 100px 0px 100px;
+    
+}
+.box{
+  
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 23px;
+    background-color: rgb(228, 226, 226);
+    text-align: center;
+}
+#about-us{
+    text-align: center;
+    position: relative;
+    height: 550px;
+}
+
+#about-us::before{
+  background: url(https://images.unsplash.com/photo-1589010588553-46e8e7c21788?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGRlbGl2ZXJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80)
+  no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  top: 0px;
+  left: 0px;  
+ background-color: black;
+
+}
+#about-us h2{
+      font-size:45px;
+      margin-top: 80px;
+    padding: 100px
+}
+#about-us p{
+  margin-left:200px;
+  margin-right:200px;
+  margin-bottom: 100px;
+}
+
+#footer{
+
+justify-content: center;
+ background-color: black;
+  color: white;
+  font-size: 0.8rem;
+ padding: 9px 20px;
+ display: flex;
+}
+
+
+/** media queries **/
+
+/** Navigation Bar **/
+
+
+@media  only screen and (max-width:1318px){
+  #header{
+   flex-direction:column; 
+  }
+  #nav-bar ul li {
+    
+    padding-left:20px ;
+    padding-right: 20px;
+    font-size: 0.9rem;
+   
+    
+
+  }
+}
+/** Navigation Bar **/
+
+/** Home section **/
+
+
+@media only screen and (max-width:1300px){
+  #home{
+         padding-left: 10px;
+         padding-right: 10px;
+         margin-bottom: 10px;
+         height: 400px;
+        
+  }
+  #home h2{
+    font-size: 2.5rem;
+}
+
+  #home::before{
+       height: 100%;
+  }
+}
+
+/** Home section **/
+
+
+
+
+/** services section **/
+@media   (max-width:900px){
+  .box{
+    margin: 20px;
+   
+  }
+  }
+  @media   (max-width:900px){
+    #container {
+      flex-direction: column;
+     padding: 0px;
+     margin: 0px;
+    }
+    }
+  
+
+  /** services section **/
+
+  /** about us section **/
+  @media  only screen and (max-width:800px){
+    #about-us h2{
+      padding: 30px;
+    }
+    #about-us p{
+         margin-left: 50px;
+         margin-right: 50px;
+         
+    }
+    #about-us{
+      height:768px;
+    }
+  }
+    
+  
+  /** about us section **/
